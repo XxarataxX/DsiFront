@@ -16,8 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
   new PureCounter();
 
   const darkModeButton = document.getElementById('darkmode-button');
+  document.body.classList.add('dark');
 
-  darkModeButton.addEventListener('click', toggleMode);
+  if (darkModeButton) {
+    darkModeButton.innerHTML = '<i class="bi bi-sun-fill"></i>';
+    darkModeButton.addEventListener('click', toggleMode);
+  }
 
   function toggleMode() {
     let buttonText = darkModeButton.innerHTML;

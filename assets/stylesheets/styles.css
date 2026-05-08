@@ -449,8 +449,15 @@ img:hover {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 64px;
   margin-right: 6px;
+}
+
+.header .logo {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 8px 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 .header.stikcy-menu {
@@ -1569,6 +1576,24 @@ section {background: var(--light-color);}
   letter-spacing: 0.7px;
   font-weight: 600;
 }
+
+.hero-logo-title {
+  margin-bottom: 24px;
+}
+
+.hero-logo {
+  width: min(580px, 100%);
+  height: auto;
+  display: block;
+}
+
+.hero-tagline {
+  font-family: 'Great Vibes', cursive;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--hero-text-color);
+}
 .hero span{
   color: var(--color-primary);
   font-weight: bold;
@@ -1623,6 +1648,12 @@ section {background: var(--light-color);}
   }
   .hero h2 {
     font-size: 22px;
+  }
+  .hero-logo {
+    width: min(380px, 100%);
+  }
+  .hero-tagline {
+    font-size: 44px;
   }
   .call-to-action {
     background: url(../images/cta-bg.jpg) center left;
