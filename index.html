@@ -79,9 +79,16 @@
     <div class="container position-relative">
       <div class="row gy-5 aos-init aos-animate">
         <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
-          <h2 data-aos="fade-up" class="hero-logo-title">
-            <img src="assets/images/Logo DSI-2025_Full capas.png" alt="DSI" class="hero-logo">
-          </h2>
+          <div data-aos="fade-up" class="hero-logo-title">
+            <div class="hero-logo-lockup">
+              <div class="hero-main-logo-frame">
+                <img src="assets/images/Logo DSI-2025_Full capas111.png" alt="DSI" class="hero-logo">
+              </div>
+              <div class="hero-sub-logo-frame">
+                <img src="assets/images/Logo DSI-2025_Full capas22.png" alt="DSI" class="hero-sub-logo">
+              </div>
+            </div>
+          </div>
           <!-- <div class="social" data-aos="fade-up" data-aos-delay="600">
             <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -106,70 +113,180 @@
               <div class="section-header">
                 <h2>NUESTRA PROPUESTA</h2>
               </div>
-              <div class="row gy-4">
-      
-                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                  <div class="icon-box">
-                    <div class="icon"><img src="assets/images/icons/service-design.svg" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">DETECCIÓN Y ALARMA DE INCENDIO</a></h4>
-                    <p>Ofrecemos una línea completa sistemas de detección dE evacuación por voz y de bomberos.</p>
-                  </div>
+              <div class="row gy-4 proposal-grid">
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <button class="proposal-card" type="button" data-bs-toggle="modal" data-bs-target="#proposalCableadoModal">
+                    <span class="proposal-card-icon"><i class="bi bi-hdd-network"></i></span>
+                    <h4>Cableado estructurado</h4>
+                    <p>Infraestructura de telecomunicaciones para datos, voz y video.</p>
+                  </button>
                 </div>
-                <!--End Icon Box -->
-      
-                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon-box">
-                    <div class="icon"><img src="assets/images/icons/service-hosting.svg" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">EXTINCIÓN DE INCENDIOS</a></h4>
-                    <p>Proveemos e instalamos equipos de extinción de incendios agua, agentes limpios, CO2 agua pulverizada. </p>
-                  </div>
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                  <button class="proposal-card" type="button" data-bs-toggle="modal" data-bs-target="#proposalCctvModal">
+                    <span class="proposal-card-icon"><i class="bi bi-camera-video"></i></span>
+                    <h4>CCTV con inteligencia artificial</h4>
+                    <p>Reconocimiento facial, placas, objetos, colores y alertas.</p>
+                  </button>
                 </div>
-                <!--End Icon Box -->
-      
-                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
-                  <div class="icon-box">
-                    <div class="icon"><img src="assets/images/icons/service-social.svg" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">CIRCUITO CERRADO DE TELEVISIÓN</a></h4>
-                    <p>Proveemos una amplia gama sistemas de visión, grabación analítica de video de las marcas líderes el mercado. </p>
-                  </div>
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <button class="proposal-card" type="button" data-bs-toggle="modal" data-bs-target="#proposalControlModal">
+                    <span class="proposal-card-icon"><i class="bi bi-person-lock"></i></span>
+                    <h4>Control de acceso</h4>
+                    <p>Soluciones peatonales y vehiculares con metodos de validacion.</p>
+                  </button>
                 </div>
-                <!--End Icon Box -->
-      
-                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                  <div class="icon-box">
-                    <div class="icon"><img src="assets/images/icons/service-seo.svg" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">CONTROL DE ACCESOS</a></h4>
-                    <p>Nuestras propuestas pueden funcionar de manera autónoma o integrarse _ los demás sistemas de seguridad de sus instalaciones por de la mejor tecnología.</p>
-                  </div>
+                <div class="col-xl-4 col-md-6 offset-xl-2" data-aos="fade-up" data-aos-delay="250">
+                  <button class="proposal-card" type="button" data-bs-toggle="modal" data-bs-target="#proposalIncendioModal">
+                    <span class="proposal-card-icon"><i class="bi bi-fire"></i></span>
+                    <h4>Deteccion y alarma vs incendio</h4>
+                    <p>Dispositivos para deteccion temprana bajo norma NFPA.</p>
+                  </button>
                 </div>
-                <!--End Icon Box -->
-      
-      
-                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon-box">
-                    <div class="icon"><img src="assets/images/icons/service-cloud.svg" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">AUTOMATIZACIÓN Y CONTROL</a></h4>
-                    <p>Proveemos soluciones innovadores para la integración total control de su edificio.</p>
-                  </div>
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <button class="proposal-card" type="button" data-bs-toggle="modal" data-bs-target="#proposalMultimediaModal">
+                    <span class="proposal-card-icon"><i class="bi bi-display"></i></span>
+                    <h4>Sistemas de reproduccion multimedia</h4>
+                    <p>Audio, video, iluminacion y senalizacion digital.</p>
+                  </button>
                 </div>
-                <!--End Icon Box -->
-      
-      
-                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
-                  <div class="icon-box">
-                    <div class="icon"><img src="assets/images/icons/service-secure.svg" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">MANTENIMIENTO DE SISTEMAS Y ACCESOS
-                    </a></h4>
-                    <p>Le ofrecemos la tranquilidad de saber que sus sistemas de seguridad funcionarán cuando instalemos!</p>
-                  </div>
-                </div>
-                <!--End Icon Box -->
-      
               </div>
             </div>
           </div>
         </div>
         <!-- End Service Section -->
+
+        <div class="modal fade proposal-modal" id="proposalCableadoModal" tabindex="-1" aria-labelledby="proposalCableadoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="proposalCableadoModalLabel">Cableado estructurado</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="proposal-modal-copy">
+                  <div class="proposal-modal-hero">
+                    <span class="proposal-modal-icon"><i class="bi bi-hdd-network"></i></span>
+                    <div>
+                      <span class="proposal-modal-kicker">Infraestructura</span>
+                      <h4>Todos nuestros proyectos necesitan una conexion</h4>
+                    </div>
+                  </div>
+                  <div class="proposal-modal-panel">
+                    <p>En DSI disenamos e instalamos cableado estructurado para la infraestructura de telecomunicaciones que su organizacion y proyectos de desarrollo necesitan. Conectamos cada punto para llevar y recibir datos, voz y video con el apoyo de las mejores marcas de cable, soportes y equipo activo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade proposal-modal" id="proposalCctvModal" tabindex="-1" aria-labelledby="proposalCctvModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="proposalCctvModalLabel">CCTV con inteligencia artificial</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="proposal-modal-copy">
+                  <div class="proposal-modal-hero">
+                    <span class="proposal-modal-icon"><i class="bi bi-camera-video"></i></span>
+                    <div>
+                      <span class="proposal-modal-kicker">Video inteligente</span>
+                      <h4>Seguridad con analitica y respuesta automatizada</h4>
+                    </div>
+                  </div>
+                  <div class="proposal-modal-panel">
+                    <p>En DSI tenemos sistemas de CCTV que, ademas de brindar los beneficios de cualquier sistema, cuentan con reconocimiento facial, reconocimiento de placas, objetos y colores. Tienen la capacidad de dar seguimiento de casos y permiten almacenar datos biometricos de un individuo o placas de un auto vinculados a incidentes o faltas.</p>
+                    <p>Cuando esta persona o vehiculo se presenta en las instalaciones, el sistema envia una alerta inmediata al centro de control. Ademas, puede activar diversos dispositivos automaticamente segun lo requerido.</p>
+                    <p>Nuestros equipos cuentan con la mas avanzada tecnologia, siendo capaces de realizar multiples tareas de manera autonoma o integrarse a diversos sistemas de automatizacion, asegurando un alto nivel de precision y eficiencia en la gestion de seguridad.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade proposal-modal" id="proposalControlModal" tabindex="-1" aria-labelledby="proposalControlModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="proposalControlModalLabel">Control de acceso</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="proposal-modal-copy">
+                  <div class="proposal-modal-hero">
+                    <span class="proposal-modal-icon"><i class="bi bi-person-lock"></i></span>
+                    <div>
+                      <span class="proposal-modal-kicker">Acceso peatonal y vehicular</span>
+                      <h4>Validacion flexible para cada entorno</h4>
+                    </div>
+                  </div>
+                  <div class="proposal-modal-panel">
+                    <p>En DSI ofrecemos soluciones avanzadas en sistemas de control de acceso tanto peatonal como vehicular, disenados mediante una amplia gama de metodos de verificacion. Estos metodos pueden combinarse segun las necesidades del cliente, permitiendo establecer reglas de validacion por rango, nivel, supervision o validacion con supervision, activacion de alarmas y bloqueos de areas, adaptandose a cada situacion especifica.</p>
+                    <p>Nuestros sistemas de control de acceso estan totalmente integrados con los sistemas de CCTV mediante el protocolo de estandarizacion ONVIF, lo que facilita el intercambio de informacion en tiempo real.</p>
+                    <p>Entre los metodos de validacion que ofrecemos se incluyen: RFID, proximidad Mifare, ID, Tag, Repuve; biometria con reconocimiento facial, dactilar, vascular y de retina; y soluciones adicionales personalizables segun las necesidades del cliente.</p>
+                    <p>DSI disena e instala sistemas de control de acceso adaptados a diversos sectores, incluyendo soluciones empresariales, residenciales e industriales, asegurando la maxima seguridad y eficiencia para cada entorno.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade proposal-modal" id="proposalIncendioModal" tabindex="-1" aria-labelledby="proposalIncendioModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="proposalIncendioModalLabel">Deteccion y alarma vs incendio</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="proposal-modal-copy">
+                  <div class="proposal-modal-hero">
+                    <span class="proposal-modal-icon"><i class="bi bi-fire"></i></span>
+                    <div>
+                      <span class="proposal-modal-kicker">Proteccion contra incendio</span>
+                      <h4>Respuesta temprana ante riesgos</h4>
+                    </div>
+                  </div>
+                  <div class="proposal-modal-panel">
+                    <p>Siguiendo estrictamente la norma NFPA, disenamos e instalamos dispositivos de deteccion temprana de humo, CO2, gases y temperatura, lo que nos permite identificar cualquier riesgo de incendio en sus instalaciones de manera inmediata.</p>
+                    <p>Estos sistemas no solo garantizan la evacuacion segura y eficiente de los ocupantes, sino que tambien permiten la intervencion oportuna ante un conato de incendio, activando sistemas de extincion como agua o agentes que no representan peligro para la salud humana.</p>
+                    <p>Este enfoque proactivo asegura una respuesta rapida y efectiva, minimizando riesgos y protegiendo tanto a las personas como a los bienes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade proposal-modal" id="proposalMultimediaModal" tabindex="-1" aria-labelledby="proposalMultimediaModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="proposalMultimediaModalLabel">Sistemas de reproduccion multimedia</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="proposal-modal-copy">
+                  <div class="proposal-modal-hero">
+                    <span class="proposal-modal-icon"><i class="bi bi-display"></i></span>
+                    <div>
+                      <span class="proposal-modal-kicker">Experiencias audiovisuales</span>
+                      <h4>Audio, video y senalizacion digital</h4>
+                    </div>
+                  </div>
+                  <div class="proposal-modal-panel">
+                    <p>Ofrecemos soluciones integrales en diseno e instalacion de sistemas multimedia de alta calidad, abarcando iluminacion, audio profesional y video de ultima generacion. Estas soluciones estan orientadas a garantizar experiencias audiovisuales inmersivas y adaptadas a las necesidades especificas de cada proyecto.</p>
+                    <p>Implementamos sistemas de senalizacion digital para la difusion de contenidos informativos o promocionales, asi como plataformas centralizadas para la gestion eficiente de la informacion visual, asegurando funcionalidad, versatilidad y control.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Featured -->
         <!-- <section>
@@ -589,9 +706,9 @@
     <!--  Clients Section  -->
     <div id="clients" class="clients section">
       <div class="container" data-aos="zoom-out">
-        <h2 style="text-align: center; margin-bottom: 20px;">Socios</h2>
+        <h2 style="text-align: center; margin-bottom: 20px;">Nuestras marcas</h2>
   
-        <div class="clients-table" aria-label="Socios DSI">
+        <div class="clients-table" aria-label="Nuestras marcas DSI">
           <div class="clients-row">
             <div class="clients-cell"><img src="assets/images/clients/client-1.png" class="img-fluid" alt=""></div>
             <div class="clients-cell"><img src="assets/images/clients/client-2.png" class="img-fluid" alt=""></div>
